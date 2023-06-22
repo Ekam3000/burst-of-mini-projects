@@ -1,7 +1,6 @@
 # burst of minor projects
 
-Here i have added some projects in field of Data-structures,ML_and_python,Tableau_dashboard viualisation ,frontend web development
-
+Here I have added some projects in the area of data structures, ML _and_python,Tableau_dashboard viualisation ,frontend web development
 
 1. Data-structures-Using-Frontend
 
