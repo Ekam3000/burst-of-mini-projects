@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ekam - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #0b0225;
+        color: white; /*the text color*/
+      }
+      nav {
+        display: flex;
+        justify-content: space-around; /* will add space between the text*/
+        align-items: center;
+        height: 80px;
+        background-color: rgb(105, 17, 192);
+      }
+      /*making nav bar,ul a flexbox*/
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none; /* bullets are gone */
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(45, 4, 169);
+        font-size: 0.8rem;
+      }
+      .left {
+        font-size: 1.7rem;
+      }
+      .my-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .firstSection {
+        display: flex;
+        margin: 10px 0;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .firstSection > div {
+        /* > div means sirf first div ko 30% mile ga*/
+        width: 30%;
+      }
+      .leftSection .buttons{
+        padding: 20px 0px;
+      }
+      .leftSection .btn{
+        padding: 10px;
+        background-color:#0b0225;
+        color:white;
+        border:2px solid white;
+        border-radius:6px;
+        font-size :10px;
+        cursor: pointer;
+      }
+      .leftSection {
+        font-size: 2rem;
+        color: blueviolet;
+      }
+      .purple {
+        color: blue;
+      }
+      .rightSection img {
+        width: 100%;
+        height: 100%;
+      }
+      main hr {
+        border: 0;
+        background: rgb(219, 227, 228);
+        height: 1px;
+        margin: 40px 77px;
+      }
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+      .secondSection h1 {
+        font-size: 1.9rem;
+      }
+      .text-gray {
+        color: gray;
+      }
+      .secondSection .box {
+        background:white;
+        width: 80vw;
+        height: 2px;
+        margin: 56px 100px;
+        display: flex;
+      }
+      .secondSection .vertical {
+        height: 93px;
+        width: 2px;
+        background-color: rgb(255, 255, 255);
+        margin: 0px 6vw;
+      }
+      .image-top {
+        width: 30px;
+        position: relative;
+        top: -50px;
+        left: -0px;
+      }
+      .vertical-title {
+        position: relative;
+        top: 41px;
+        width: 40px;
+      }
+      .vertical-desc {
+        position: relative;
+        top: 59px;
+        color: gray;
+        width: 150px;
+        font-size: 20px;
+      }
+      footer{
+        background-color: rgb(30, 13, 89);
+        height: 230px;
+      }
+      .footer{
+         display:flex; 
+        padding:23px 00px;
+        justify-content:space-evenly;
+      }
+
+       .footer-first{
+        text-align:center;
+        margin:0px -120px;
+  
+      } 
+      footer h3{
+        text-align:left;
+      }
+      footer ul{
+        margin: 00px 100px;
+        list-style: none;
+      }
+      .footer >div{
+        width: 223px;
+      }
+      footer .footer-rights{
+        text-align:left;
+        color:gray;
+        padding: 12px 0px;
+      }
+      /* making website resposive*/
+
+      @media screen and (max-width:2000px){
+        body{
+          min-width: fit-content;
+        }
+        nav{
+          flex-direction:column;
+        }
+
+        .box{
+          flex-direction:column;
+        }
+        .secondSection{  
+          height:141vh; 
+          display:flex;
+          flex-direction:column;
+          align-items:center;
+        }
+        .secondSection .vertical{
+          height:unset;
+        }
+        .vertical-title, .vertical-desc{
+          left:45px;
+        }
+        .secondSection .box{
+          width :50vw;
+        }
+        footer{
+          display:flex;
+          flex-direction:column;
+          align-items:center;
+        }
+        .firstSection{
+          flex-direction:column-reverse;
+        }
+        .leftSection {
+          width:100% !important;
+          display:flex;
+          flex-direction:column;
+          justify-content:center;
+          align-items:center;
+        }
+        .rightSection{
+          width: 400px !important;
+          display:flex;
+          justify-content:center;
+        }
+        .rightSection img{
+          margin-bottom:73px;
+        }
+        .image-top{
+          top:95px;
+          }
+      }
+    
+      @media screen and (max-width: 500px) 
+      {
+        .rightSection img{
+          width: 45vw;
+        }
+      }
+      @media screen and (min-width:700px) and (max-width:1000px){
+        .secondSection .vertical {
+          margin: 0px 200px;
+        }
+      }
+      @media screen and (min-width:1000px) and (max-width:1500px){
+        .secondSection .vertical {
+          margin: 0px 300px;
+        }
+        .secondSection .box{
+          width :57vw;
+        }
+      }
+      @media screen and (min-width:1500px) and (max-width:2000px){
+        .secondSection .vertical {
+          margin: 0px 500px;
+        }
+        .secondSection .box{
+          width :65vw;
+        }
+      }
+      @media screen and (min-width: 2000px) {
+        .secondSection .vertical {
+          margin: 0px 400px;
+        }
+      }
+
+      #element {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Ekam's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+            <!--refer 23. to comp this-->
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="my-image">
+      <img  src="d1.png" alt="my photo">
+      </div>
+      <section class="firstSection">
+        <div class="leftSection">
+          <div>Hello , My name is <span class="purple">Ekam.</span> </div>
+          <div>and i am a passionate
+          </div>
+         <span id="element"></span>
+
+          <div class="buttons">
+            <button class="btn">Download Resume</button>
+            <button class="btn">Visit Github</button>
+            <!--refer 22. to complete this-->
+        </div>
+        </div>
+        <div class="rightSection">
+          <img src="b.png" alt="developer" />
+        </div>
+      </section>
+      <hr/>
+      <section class="secondSection">
+        <span class="text-gray">What i have done so far</span>
+        <h1>Past Experience</h1>
+
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="e.png" alt="my photo" />
+            <div class="vertical-title">
+              Secondary School Graduate [2018-19]
+            </div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+              voluptates rerum saepe possimus asperiores minima nihil expedita
+              nulla, error, esse nam cumque eligendi.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="d1.png" alt="my photo" />
+            <div class="vertical-title">
+              College bachelor [2020-2024]
+            </div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+              voluptates rerum saepe possimus asperiores minima nihil expedita
+              nulla, error, esse nam cumque eligendi.
+            </div>
+          </div>
+          <!--<div class="vertical"></div>
+        </div>-->
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-first"></div>
+        <h3>Ekam's Portfolio</h3>
+        </div>
+        <div class="footer-second"></div>
+        <ul>
+          <li>Home</li>
+          <li>Contact me</li>
+        </ul>
+        </div>
+         <div class="footer-rights">
+          Copyright &copy; ekambhelle030@gmail.com. All rights reserved!</div>
+         </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Coder @C++", "Web Developer", "Machine Learner"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
+
+<!-- have used types js(a github pg) in this-->
+ 
