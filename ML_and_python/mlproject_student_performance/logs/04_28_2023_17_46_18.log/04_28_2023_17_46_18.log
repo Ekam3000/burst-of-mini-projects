@@ -1,0 +1,4 @@
+[ 2023-04-28 17:46:18,700 ] 186 werkzeug - WARNING -  * Debugger is active!
+[ 2023-04-28 17:46:18,744 ] 186 werkzeug - INFO -  * Debugger PIN: 704-216-159
+[ 2023-04-28 17:46:49,867 ] 186 werkzeug - INFO - 127.0.0.1 - - [28/Apr/2023 17:46:49] "GET / HTTP/1.1" 200 -
+[ 2023-04-28 17:47:19,380 ] 186 werkzeug - INFO -  * Detected change in 'd:\\users1\\documents\\ml_projects\\mlproject\\app.py', reloading

@@ -1,0 +1,6 @@
+streamlit
+requests
+altair<5
+pandas<2
+
+

@@ -1,0 +1,3 @@
+[ 2023-04-15 12:02:02,491 ] 20 root - INFO - logging has started...
+
+20 means 20th line in logger have the logginf info
