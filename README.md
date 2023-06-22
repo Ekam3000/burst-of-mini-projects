@@ -4,7 +4,7 @@ Here I have added some projects in the area of data structures, ML _and_python,T
 
 1. Data-structures-Using-Frontend
 
-involves real life implementation of data structures in mini games along with helping hands of javascript,HTML,CSS
+involves real life implementation of data structures  in mini games along with helping hands of javascript,HTML,CSS
 
 2. ML_and_python
 
